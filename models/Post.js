@@ -20,7 +20,7 @@ Post.init(
             type: DataTypes.STRING,
             allowNull: false
         },
-        created_by: {
+        user_id: {
             type: DataTypes.INTEGER,
             references: {
                 model: 'user',
@@ -29,11 +29,11 @@ Post.init(
         },
         date: {
             type: DataTypes.DATE
-        },
-        //think about how to add comment 
-        comment: {
-            type: DataTypes.STRING
         }
+        //think about how to add comment 
+        // comment: {
+        //     type: DataTypes.STRING
+        // }
     },
     {
         sequelize,
