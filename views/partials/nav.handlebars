@@ -1,0 +1,21 @@
+<link rel="stylesheet" href="./styles.css">
+
+
+
+<nav class="navbar sticky-top navbar-light bg-light">
+        <h3>
+          <a id="title" href="/">Just tech Blog </a>
+        </h3>
+          {{#if loggedIn}}
+          <a href="/logout"><button id="logout" class="btn-no-style">logout</button></a>
+          
+          {{else}}
+          <div id="menu">
+             <a href="/login">Login</a>
+             <a href="/signup">Signup</a>
+          {{/if}}
+              <a href="/dashboard">dashboard</a>
+             <a href="/posts">Posts</a>
+            </ul>
+          </div>
+      </nav>
