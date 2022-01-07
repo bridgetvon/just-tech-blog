@@ -1,17 +1,21 @@
-<section>
-  <h2>Create New Post</h2>
 
-  <form class="new-post-form">
+<section>
+<form id="post-form" class="post-form">
+  <div class="newpost-wrap">
+    <h6 class="form-title"> Create new Post </h6>
     <div>
-      <label for="post-title">Title</label>
-      <input type="text" id="post-title" name="post-title" />
-    </div>
-    <div>
-      <label for="contents">{{post.contents}}</label>
-      <input id="contents" name="contents" />
-    </div>
-    <button type="submit" class="btn">Create</button>
-  </form>
+    <input type="text" id="email-login" placeholder="post-title"/>
+  </div>
+  <div>
+    <label for="contents"> {{post.contents}}</label>
+    <input type="password" id="password-login"/>
+  </div>
+  <div>
+    <button id="login-btn" type="submit">Create</button>
+  </div>
+  </div>
+</form>
+</div>
 </section>
 
 {{#if posts.length}}
