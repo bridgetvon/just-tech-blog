@@ -30,10 +30,6 @@ Post.init(
         date: {
             type: DataTypes.DATE
         }
-        //think about how to add comment 
-        // comment: {
-        //     type: DataTypes.STRING
-        // }
     },
     {
         sequelize,
