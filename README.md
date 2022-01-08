@@ -1,6 +1,6 @@
 # just-tech-blog
 # my_tech_blog
-  ### By bridgetvon* [Email me](bridget.schaefer31@gmail.com) * 
+  ### By bridgetvon * [Email me](bridget.schaefer31@gmail.com) * 
   * [Deployed Appplication](https://fast-eyrie-82273.herokuapp.com/)
  
   ## Table of contents
@@ -14,7 +14,9 @@
   Just tech blog is a CMS style blog site that allows users to post about tech and connect through comments. 
 
   # Visual
-   
+   <img src="./public/images/login.png">
+
+   <img src="./public/images/post.png">
 
   ## User Story
   - AS A developer who writes about tech
