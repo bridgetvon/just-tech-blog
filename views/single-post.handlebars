@@ -1,6 +1,31 @@
 {{> post-info post}}
 
 {{#if loggedIn}}
+<div class="post">
+  <div class="card">
+    <h2> {{post.title}}</h2>
+    <div>
+      {{post.User.username}} posted on {{ format+date post.created_at}}
+    </div>
+    <div class="card-body">
+      {{post.body}}
+    </div>
+  </div>
+</div>
+  {{#if post.comment}}
+<section class="card">
+  <div class="card-header">
+    <h2>comments</h2>
+  </div>
+  <div class="card">
+    {{#each post.comment}}
+    <div>
+      <p>
+        {{body}}
+      </p>
+    </div>
+  </div>
+</section>
 <form class="comment-form">
   <div>
     <textarea name="comment-body"></textarea>
@@ -8,7 +33,7 @@
 
   <div>
     <button type="submit">add comment</button>
-    <button type="button" class="upvote-btn">upvote</button>
+    <button type="button" class="comment-btn">comment</button>
   </div>
 </form>
 {{/if}}
